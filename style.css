@@ -92,7 +92,20 @@ nav a {
 
 }
 
-@media (max-width: 767px){
+.openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+.closeMenu {
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* @media (max-width: 767px){
     body{
         background-size: 92%;
         background-position: 100% 0%;
@@ -136,15 +149,76 @@ nav a {
     .btn-join-now{
         display: none;
     }
-}
+} */
 
+/* new test nav */
+@media (min-width: 768px) and (max-width: 991px){
+    nav{
+        display: none;
+        height: 50vh;
+        position:fixed;
+        top: 50px;
+        right: 20px;
+        z-index: 10;
+        margin-top: 25px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: top 1s ease;
+
+    }
+
+    .btn-join-now {
+        display: none;
+    }
+
+    .btn-join-now-b{
+        text-align: center;
+    }
+
+    .openMenu {
+        font-size: 4rem;
+        margin: 20px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 100px;
+    }
+
+    /* .closeMenu {
+        display: block;
+    } */
+
+    .logo-img {
+        padding-top: 15px;
+    }
+
+    .hero { 
+        /* margin-top: 170px */
+        padding-left: 5%;
+    }
+
+    .hero-image{
+        height: 80px;
+    }
+
+    .hero-text {
+        width: 50%;
+        /* margin-top: 180px; */
+    }
+
+
+}
 
 
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .hero-image img {
     width: 100%;
@@ -358,7 +432,7 @@ nav a {
         background-attachment: fixed;
     }
 }
-
+/*============== Stoped Here last week=================================== */
 /* ====================== Pricing ====================================== */
 .pricing {
     display: grid;
